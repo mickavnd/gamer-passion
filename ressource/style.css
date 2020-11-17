@@ -1,0 +1,97 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{    
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-image: url(./image/pexels-photo-1670977.jpeg);
+   box-sizing: cover;
+height: 500px;
+background-size:cover;
+    background-repeat:no-repeat;
+}
+.home-title{
+display: flex;
+justify-content:center ;
+align-items: center;
+}
+h1{
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 100px;
+}
+
+.sous-header{
+    background-color: rgba(214, 194, 11, 0.808);
+    display: flex; 
+    align-items: center;
+    width: 1365px;
+    height: 50px;
+
+}
+.nav{    width: 1000px;
+display:flex;
+justify-content:space-around;
+align-items: center;
+
+}
+.search{
+    margin-left: 150px;
+    width: 50px;
+    display: flex;
+    justify-content:center;
+}
+input{
+    width: 1000px;
+    height: 20px;
+    position: relative;
+    right: 50px;
+}
+
+
+.btn{
+    width: 80PX;
+    height:25px;
+    border: 1px rgba(19, 18, 14, 0.808) solid;
+    margin-left: 5px;
+    position: relative;
+    left:10px;
+    text-align: center;
+    background-color: gray;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    border-radius:10px ;
+    
+}
+.btn:hover{
+    background-color: rgba(214, 194, 11, 0.808);
+    color:gray ;
+    transition: 2S;
+}
+
+a{
+    margin: 0px;
+    border-right: 3px black solid;
+    width: 238px;
+    height: 45px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+
+}
+ a:hover{
+    background-color: gray;
+}
+.sous-header:hover{
+    
+}
+
+
+
