@@ -33,7 +33,8 @@ h1{
     height: 50px;
 
 }
-.nav{    width: 1000px;
+.nav{    
+    width: 1000px;
 display:flex;
 justify-content:space-around;
 align-items: center;
@@ -77,20 +78,86 @@ input{
 a{
     margin: 0px;
     border-right: 3px black solid;
-    width: 238px;
-    height: 45px;
+    
+    width: 246px;
+    height: 47px;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
     text-align: center;
     position: relative;
+    color:gray;
+    
 
 }
  a:hover{
     background-color: gray;
+    color: rgba(214, 194, 11, 0.808);
+    transition: 2s;
 }
-.sous-header:hover{
-    
+.p-text{
+    height:50px ;
+    display: flex;
+    align-items: center;
+}
+.p{
+    height: 100px;
+}
+.presentation{
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items:center ;
+}
+
+h2{
+    font-family: 'Bebas Neue', cursive;
+    margin-top: 15Px;
+}
+.expert{
+    width: 500px;
+    height:200px;
+    border: 2px orange solid;
+    display:flex;
+    margin-top: 10px;
+    position: relative;
+    right: 150PX;
+
+    align-self: flex-end;
+
+}
+.expert:hover{
+    border: 2px green solid;
+    transition: 2S;
+}
+.photo{
+    width: 500px;
+    height:200px ;
+}
+
+.fonctionnement{
+    width: 500px;
+    height:200px;
+    border: 2px orange solid;
+    display:flex;
+    margin-top: 10px;
+    align-self: flex-start;
+position: relative;
+left: 150PX;
+
+}
+.livraison{
+    width: 500px;
+    height:200px;
+    border: 2px orange solid;
+    display:flex;
+    margin-top: 10px;
+    align-self: flex-end;
+    justify-self: center;
+    position: relative;
+    right: 150PX;
+
 }
 
 
