@@ -30,7 +30,7 @@ h1{
     background-color: rgba(214, 194, 11, 0.808);
     display: flex; 
     align-items: center;
-    width: 1365px;
+    width: 1348px;
     height: 50px;
 
 }
@@ -113,13 +113,29 @@ a{
     align-items:center ;
 }
 
-h2, h3{
+h2, h3, h4{
     font-family: 'Bebas Neue', cursive;
     margin-top: 15Px;
     border-bottom:2px #d6c20bce solid ;
 }
+h4{
+    color: white;
+}
+.p-p:hover{
+    border-bottom:3px blueviolet  solid;
+    transition: 1s;
+}
+.p-n:hover{
+    border-bottom:2px red solid;
+    transition: 1s;
+}
+.p-x:hover{
+    border-bottom: 2px green solid;
+    transition: 1s;
+}
 h3:hover{
     border-bottom: 2px green solid;
+    transition: 1sec;
 }
 .expert{
     width: 500px;
@@ -129,6 +145,7 @@ h3:hover{
     margin-top: 10px;
     position: relative;
     right: 150PX;
+    border-radius: 20px;
     align-self: flex-end;
     box-shadow: 10px 5px 5px  orange;
 
@@ -136,7 +153,7 @@ h3:hover{
 .expert:hover{
     border: 2px green solid;
     transition: 2S;
-    box-shadow: 10px 5px 5px green;
+    box-shadow: -10px 5px 5px green;
 }
 .text{
     text-align: center;
@@ -159,10 +176,11 @@ h3:hover{
     border: 2px orange dashed;
     display:flex;
     margin-top: 10px;
+    border-radius: 20px;
     align-self: flex-start;
 position: relative;
 left: 150PX;
-box-shadow: 10px 5px 5px orange;
+box-shadow: -10px 5px 5px orange;
 
 }
 .fonctionnement:hover{
@@ -179,7 +197,7 @@ box-shadow: 10px 5px 5px orange;
     align-self: flex-end;
     justify-self: center;
     position: relative; 
-    border-radius: 40px;
+    border-radius: 20px;
    right: 150PX;
     box-shadow: 10px 5px 5px orange;
       
@@ -190,7 +208,7 @@ box-shadow: 10px 5px 5px orange;
 .livraison:hover{
     border: 4px green solid;
     transition: 2S;
-    box-shadow: 10px 5px 5px green;
+    box-shadow: -10px 5px 5px green;
 }
 img{
     width: 190PX;
@@ -204,7 +222,121 @@ img{
     width: 99%;
     background-repeat:no-repeat ;
     background-position:cover;
+    display: flex;
+    justify-content: space-around;
+}
+.p-console{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    text-align: center;
+}
+.btn-p{
+    position: relative;
+    bottom: 30px;
+    left: 20px;
+}
+.titre-cataloge
+{
+    height: 50px;
+}
+.p-h2{
+    margin-top: 60px;
+    position: relative;
+    top: 5px;
+}
+.x:hover{
+    color: white;
+    background-color: green;
+    transition: 1s;
+    border: 1px green solid;
+}
+.n:hover{
+    color: white;
+    background-color:red;
+    transition: 1s;
+    border: 1px red solid;
+
+}
+.s:hover{
+    color: white;
+    background-color:blueviolet;
+    transition: 1s;
+    border: 1px blueviolet solid;
+
+}
+.footer{
+    background-color: rgba(214, 194, 11, 0.808);
+    display: flex;
+    justify-content: space-evenly;
+    width: 1335px;
+    height:100px;
+   
+}
+.flex{
+    height: 500px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+.block{
+width: 350px;
+height: 350px;
+border:10px rgba(214, 194, 11, 0.808)  double;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
 }
 
+.connexion{
+    width: 50%;
+    position: relative;
+    left: 10px;
+
+}
+.bar{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+label{
+    margin-bottom: 10px;
+}
+.btn-connexion{
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.fmdp{
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+.btn-con:hover{
+    color: #ffffff;
+}
+.h2{
+    text-align: center;
+}
+.admin{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.titre-admin{
+    text-align: center  
+}
+.graphique{
+    width: 700px;
+    height: 500px;
+}
+.h3{
+    text-align: center;
+    border-bottom: 2px rgba(214, 194, 11, 0.808);
+}
 
 
