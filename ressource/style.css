@@ -6,6 +6,7 @@
 html{    
     margin: 0px;
     padding: 0px;
+    
 }
 header{
     background-image: url(./image/pexels-photo-1670977.jpeg);
@@ -90,6 +91,7 @@ a{
     
 
 }
+
  a:hover{
     background-color: gray;
     color: rgba(214, 194, 11, 0.808);
@@ -104,60 +106,104 @@ a{
     height: 100px;
 }
 .presentation{
-    height: 600px;
+    height: 700px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items:center ;
 }
 
-h2{
+h2, h3{
     font-family: 'Bebas Neue', cursive;
     margin-top: 15Px;
+    border-bottom:2px #d6c20bce solid ;
+}
+h3:hover{
+    border-bottom: 2px green solid;
 }
 .expert{
     width: 500px;
     height:200px;
-    border: 2px orange solid;
+    border: 2px orange dashed;
     display:flex;
     margin-top: 10px;
     position: relative;
     right: 150PX;
-
     align-self: flex-end;
+    box-shadow: 10px 5px 5px  orange;
 
 }
 .expert:hover{
     border: 2px green solid;
     transition: 2S;
+    box-shadow: 10px 5px 5px green;
+}
+.text{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
 }
 .photo{
     width: 500px;
     height:200px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .fonctionnement{
     width: 500px;
     height:200px;
-    border: 2px orange solid;
+    border: 2px orange dashed;
     display:flex;
     margin-top: 10px;
     align-self: flex-start;
 position: relative;
 left: 150PX;
+box-shadow: 10px 5px 5px orange;
 
+}
+.fonctionnement:hover{
+    border: 2px green solid;
+    transition: 2S;
+    box-shadow: 10px 5px 5px green;
 }
 .livraison{
     width: 500px;
     height:200px;
-    border: 2px orange solid;
+    border: 2px orange dashed;
     display:flex;
     margin-top: 10px;
     align-self: flex-end;
     justify-self: center;
-    position: relative;
-    right: 150PX;
+    position: relative; 
+    border-radius: 40px;
+   right: 150PX;
+    box-shadow: 10px 5px 5px orange;
+      
 
+}
+
+
+.livraison:hover{
+    border: 4px green solid;
+    transition: 2S;
+    box-shadow: 10px 5px 5px green;
+}
+img{
+    width: 190PX;
+    height: 190px;
+}
+.cataloge{
+    margin-top: 100px;
+
+    background-image: url(./image/console-gaming.jpg);
+    height: 100VH;
+    width: 99%;
+    background-repeat:no-repeat ;
+    background-position:cover;
 }
 
 
