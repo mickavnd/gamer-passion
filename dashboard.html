@@ -1,50 +1,123 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
     <link rel="stylesheet" href="./ressource/style.css">
 </head>
-<body> <header>
-    <h1> gamer passion</h1>
-</header>
-<section class="sous-header">
-    <div class="nav">
-        <div class="p-text">
 
-            <a href="">
-                <p>console </p>
-            </a>
-            <a href="">cataloge</a>
-            <a href="">contact</a>
-            <a href="">connexion </a>
+<body>
+    <header>
+        <h1> gamer passion</h1>
+    </header>
+    <section class="sous-header">
+        <div class="nav">
+            <div class="p-text">
+
+                <a href="">
+                    <p>console </p>
+                </a>
+                <a href="">cataloge</a>
+                <a href="">contact</a>
+                <a href="">connexion </a>
+            </div>
         </div>
-    </div>
-    <div class="search">
-        <input type="text" Class="bar" placeholder="trouver votre console">
+        <div class="search">
+            <input type="text" Class="bar" placeholder="trouver votre console">
 
-    </div>
-    <a href="" class="btn"> recherche</a>
+        </div>
+        <a href="" class="btn"> recherche</a>
 
 
-</section>
+    </section>
 
     <div class="admin">
         <div class="titre-admin">
-                <h2>admin</h2>
-            </div >
+            <h2>admin</h2>
+        </div>
 
-            <div class="ajout-last">
-                 <div titr
-                <h3>ajout  article</h3>
+        <div class="ajout-last">
+            <div titre-last>
+                <h3>ajout article</h3>
+            </div>
+            <div class="image-last">
+                <div class="image-2"> <i class="fas fa-plus-circle icone"></i> </div>
+                <div class="image-2"><i class="fas fa-plus-circle icone"></i> </div>
+                <div class="image-2"><i class="fas fa-plus-circle icone"></i> </div>
+                <div class="image-2"><i class="fas fa-plus-circle icone"></i> </div>
 
+            </div>
+            <div class="tableau">
+                <div>
+                    <h3> les dernier article ajouté</h3>
+                    <table style="width:100%">
+                </div>
+                <thead>
+                    <tr>
+
+                        <td>annonce
+                        </td>
+                        <td>utilisateur</td>
+                        <td>description</td>
+                        <td>prix </td>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+
+                        <td> playstation 1</td>
+                        <td> didi 99</td>
+                        <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                            Aenean massa. Cum sociis natoque </td>
+                        <td>49€</td>
+                        <td><i class="fas fa-check-circle"></i>
+                            <i class="fas fa-pen"></i>
+                            <i class="fas fa-trash"></i></td>
+
+
+                    </tr>
+                    <tr>
+                        <td>game gear edition colector </td>
+                        <td>frel</td>
+                        <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                            Aenean massa. Cum sociis natoque</td>
+                        <td>100€</td>
+                        <td class="logo"><i class="fas fa-check-circle"></i>
+                            <i class="fas fa-pen"></i>
+                            <i class="fas fa-trash"></i></td>
+
+
+                    </tr>
+                    <tr>
+                        <td>switch</td>
+                        <td>jeje</td>
+                        <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                            Aenean massa. Cum sociis natoque</td>
+                        <td>299€</td>
+                        <td><i class="fas fa-check-circle"></i>
+                            <i class="fas fa-pen"></i>
+                            <i class="fas fa-trash"></i></td>
+                    </tr>
+                </tbody>
+                </table>
 
             </div>
 
-            <div class="graphique">
-                <h3 class="h3">tableau des vente du mois</h3>
+        </div>
+        <div class="btv">
+            <a href="" class="btn ">validé les articles</a>
+        </div>
+
+        <div class="graphique">
+            <div class="graph1">
+                <h3 class="h3">tableau des ventes du mois</h3>
                 <canvas id="myChart" ></canvas>
                 <script>
                     var ctx = document.getElementById('myChart');
@@ -87,10 +160,67 @@
                         }
                     });
                     </script>
-            </div>
-        
+                    </div>
+                    <div class="graph2">
+                        <h3 class="h3">tableau nombre de visite</h3>
+                        <canvas id="myChart2" id="mychart3" ></canvas>
+                        <script>
+                            var ctx = document.getElementById('myChart2');
+                            var myChart = new Chart(ctx, {
+                                type: 'line',
+                                data: {
+                                    labels: ['nov', 'dec', 'janv', 'fev', 'avril',],
+                                    datasets: [{
+                                        label: 'viste du site',
+                                        data: [10,100, 500, 1000,  1500, ],
+                                        
+                                        
+                                        backgroundColor: [
+                                            'rgba(255, 99, 132, 0.2)',
+                                            'rgba(54, 162, 235, 0.2)',
+                                            'rgba(255, 206, 86, 0.2)',
+                                            'rgba(75, 192, 192, 0.2)',
+                                            'rgba(153, 102, 255, 0.2)',
+                                            'rgba(255, 159, 64, 0.2)'
+                                        ],
+                                        borderColor: [
+                                            'rgba(255, 99, 132, 1)',
+                                            'rgba(54, 162, 235, 1)',
+                                            'rgba(255, 206, 86, 1)',
+                                            'rgba(75, 192, 192, 1)',
+                                            'rgba(153, 102, 255, 1)',
+                                            'rgba(255, 159, 64, 1)'
+                                        ],
+                                        borderWidth: 1
+                                    }]
+                                },
+                                
+                                
+                                
+                                options: {
+                                    scales: {
+                                        yAxes: [{
+                                            ticks: {
+                                                beginAtZero: true
+                                            }
+                                        }]
+                                    }
+                                }
+                            });
+                            
+                            
+                            </script>
+                            </div>
+
+        </div>
+
     </div>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
